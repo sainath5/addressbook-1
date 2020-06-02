@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Compiling') {
+        stage('Compileing') {
             steps {
                 sh '/usr/local/src/apache-maven/bin/mvn compile'
             }
@@ -11,7 +11,7 @@ pipeline {
                 sh '/usr/local/src/apache-maven/bin/mvn test'
             }
         }
-        stage('Packagin') {
+        stage('Packaging') {
             steps {
                 sh '/usr/local/src/apache-maven/bin/mvn package'
                 
